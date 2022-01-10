@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Calculo de IMC</title>
+	<link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+	<section class="cards">
+		<div id="cardCalculo" class="card">
+			<div class="card-body">
+				<hgroup class="titulos-bgverde">
+					<h3 class="card-title">Calculadora IMC</h3>
+				</hgroup>
+				<h6 class="card-subtitle mb-2 text-muted">Descubre tu indice de masa corporal</h6>
+				<form class="card-text">Ingrese peso y estatura:
+					<div class="mb-3 mt-3 row">
+						<div class="input-group col-sm-10">
+							<label for="staticEmail" class="col-sm-3 col-form-label">Peso</label>
+							<input id="inputPeso" class="form-control form-control-lg" type="number" placeholder="Ingrese su peso" aria-label=".form-control-lg example">
+							<span class="input-group-text">KG</span>
+						</div>
+					</div>
+					<div class="mb-3 row">
+						<div class="input-group col-sm-10">
+							<label for="staticEmail" class="col-sm-3 col-form-label">Estatura</label>
+							<input id="inputEstatura" class="form-control form-control-lg" type="number" placeholder="Ingrese su estatura" aria-label=".form-control-lg example">
+							<span class="input-group-text">M</span>
+						</div>
+					</div>
+					<button id="calcIMC" type="button" onclick="calcularIMC(this)" class="btn btn-success">CALCULAR IMC</button>
+				</form>
+
+			</div>
+		</div>
+
+		<div id="cardResultado" class="card">
+			<div class="card-body">
+				<hgroup class="titulos-bgverde">
+					<h3 class="card-title">Resultado</h3>
+				</hgroup>
+
+				<div id="finalAmount" class="text-center">
+
+					<span id="valorFinal" class="final-value">90</span><br>
+
+					<div class="progress-container">
+						<div class="progress progress-striped active bg-arcoiris">
+							<div id="porcentajeBarra" class="progress-bar bg-transparent" style="width:60%"></div>
+						</div>
+					</div>
+
+					<span id="resultadoIMC" class="result-text">hhh</span><br>
+
+
+
+
+					<div class="image">
+						<img src="images/Estado_IMC.JPG" class="card-img" alt="Estados IMC" width="100px">
+				</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<script src="scripts/script.js" rel="module"></script>
+</body>
+
+</html>
